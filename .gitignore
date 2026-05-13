@@ -39,3 +39,7 @@ out/
 *.bak
 *.tmp
 Thumbs.db
+
+# Claude Code — by default exclude .claude/ to prevent accidental commits
+# (commit-push 스킬은 이미 트래킹 중이므로 그대로 유지됨. 새로 트래킹하려면 git add -f 필요)
+.claude/
