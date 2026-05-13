@@ -2,31 +2,40 @@
 
 iOS 앱 **사진에 숫자 입력 (Number on Photos)** 의 개인정보 처리방침 모음입니다.
 
-앱이 지원하는 언어별로 정책이 분리되어 있습니다. 본인이 편한 언어를 선택하세요.
-This privacy policy is available in multiple languages. Please choose the one you prefer.
+각 언어 폴더의 루트 URL이 **App Store Connect 등록용 안정 URL**입니다. 이 URL은 정책이 갱신되어도 바뀌지 않으며, 자동으로 최신 정책 + 이전 버전 목록을 표시합니다.
 
 ## 언어 선택 / Language
 
-| 언어 | Language | 최신 정책 / Latest |
+| 언어 | Language | URL (App Store Connect 등록용) |
 |---|---|---|
-| 한국어 | Korean | [`ko/2026-05-13.md`](./ko/2026-05-13.md) |
-| English | English | [`en/2026-05-13.md`](./en/2026-05-13.md) |
-| 日本語 | Japanese | [`ja/2026-05-13.md`](./ja/2026-05-13.md) |
-| 简体中文 | Simplified Chinese | [`zh-Hans/2026-05-13.md`](./zh-Hans/2026-05-13.md) |
-| 繁體中文 | Traditional Chinese | [`zh-Hant/2026-05-13.md`](./zh-Hant/2026-05-13.md) |
+| 한국어 | Korean | [`ko/`](./ko/) |
+| English | English | [`en/`](./en/) |
+| 日本語 | Japanese | [`ja/`](./ja/) |
+| 简体中文 | Simplified Chinese | [`zh-Hans/`](./zh-Hans/) |
+| 繁體中文 | Traditional Chinese | [`zh-Hant/`](./zh-Hant/) |
 
 ## 폴더 구조
 
 ```
 NumberOfPictures/
-├── ko/         한국어 (Korean)
-├── en/         English (글로벌 영어권 베이스라인)
-├── ja/         日本語 (Japanese)
-├── zh-Hans/    简体中文 (Simplified Chinese)
-└── zh-Hant/    繁體中文 (Traditional Chinese)
+├── ko/
+│   ├── index.md          ← 안정 URL (App Store 등록) — 최신 정책 + 이전 버전 목록 자동 표시
+│   └── YYYY-MM-DD.md     ← 시행일자별 정책 (히스토리)
+├── en/
+├── ja/
+├── zh-Hans/
+└── zh-Hant/
 ```
 
-각 언어 폴더에는 시행일자별 정책 파일(`YYYY-MM-DD.md`)이 히스토리로 누적됩니다. 가장 최신 파일이 현재 유효한 정책입니다.
+## 정책 갱신 워크플로
+
+1. 새 날짜 파일 추가: `{언어}/YYYY-MM-DD.md`
+2. 해당 언어의 `index.md`에서:
+   - `현재 시행 중인 버전` 날짜를 새 날짜로 변경
+   - `{% raw %}{% include_relative ... %}{% endraw %}` 줄의 파일명을 새 파일명으로 변경
+   - `이전 버전 / Archive` 섹션에 기존 버전 링크 추가
+3. 5개 언어 모두 동일하게 갱신
+4. `git commit && git push` → GitHub Pages 자동 재빌드 → App Store URL은 그대로
 
 ## 적용 법령 기준
 
