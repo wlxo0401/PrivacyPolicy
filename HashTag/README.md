@@ -10,11 +10,16 @@ iOS 앱 **복붙태그 (CopyTag)** 의 개인정보 처리방침 모음입니다
 |---|---|---|
 | 한국어 | Korean | [`ko/`](./ko/) |
 | English | English | [`en/`](./en/) |
+| 日本語 | Japanese | [`ja/`](./ja/) |
+| 简体中文 | Simplified Chinese | [`zh-Hans/`](./zh-Hans/) |
+| 繁體中文 | Traditional Chinese | [`zh-Hant/`](./zh-Hant/) |
 
 ## 적용 법령 기준
 
 - `ko/` — 한국 「개인정보 보호법(PIPA)」 + 정보통신망법
 - `en/` — EU GDPR + CCPA/CPRA (캘리포니아) 섹션 포함
+- `ja/` — 일본 「個人情報の保護に関する法律(APPI)」
+- `zh-Hans/`, `zh-Hant/` — GDPR 베이스 번역본
 
 ## 앱 데이터 특징
 
