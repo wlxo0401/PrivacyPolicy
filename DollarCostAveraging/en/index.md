@@ -6,7 +6,7 @@ description: 루프 - 적립식 투자 일지 작성 (Loop) — Privacy Policy (
 >
 > **Previous versions / Archive**: none (initial release)
 >
-> **Other languages**: [한국어](../ko/)
+> **Other languages**: [한국어](../ko/) · [日本語](../ja/) · [简体中文](../zh-Hans/) · [繁體中文](../zh-Hant/)
 
 ---
 
