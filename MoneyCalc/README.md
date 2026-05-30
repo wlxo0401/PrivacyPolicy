@@ -26,7 +26,8 @@ iOS 앱 **돈계산 - 모임 정산을 쉽고 빠르게 (MoneyCalc)** 의 개인
 - 사용자가 입력한 정산 데이터(그룹/멤버/결제 내역)는 **기기 내 SwiftData에만 저장**, 외부 서버 미전송
 - iCloud(CloudKit) 동기화 **의도적 비활성화**
 - 위젯 데이터는 App Group으로 동일 기기 내 공유만, 외부 전송 X
-- 자동 수집: Firebase Analytics, Google AdMob, Apple SKAdNetwork, Apple 시스템 크래시 로그(옵트인)
+- 자동 수집(제3자 SDK·시스템): Firebase Analytics, Google AdMob, Google UMP(광고·추적 동의 관리, ATT 기반), Apple SKAdNetwork, Apple 시스템 크래시 로그(옵트인) — **Crashlytics 미사용**
+- 외부 통신: Apple iTunes Lookup(앱 최신 버전 확인, bundleId만 전송 — 비식별)
 - 피드백 메일은 Apple Mail로 사용자 직접 발송 — 개발자 서버 거치지 않음
 
 ## 연락처
