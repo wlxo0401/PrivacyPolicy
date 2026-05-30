@@ -23,10 +23,11 @@ iOS 앱 **복붙태그 (CopyTag)** 의 개인정보 처리방침 모음입니다
 
 ## 앱 데이터 특징
 
-- 이용자가 입력한 태그·태그 그룹·포스트 데이터는 **기기 내 Realm + SwiftData에만 저장**, 외부 서버 미전송
+- 이용자가 입력한 태그·태그 그룹·포스트 데이터는 **기기 내 Realm + SwiftData에만 저장**, 외부 서버 미전송 (Realm은 레거시 데이터를 SwiftData로 옮기는 로컬 마이그레이션 용도, 클라우드 동기화 없음)
 - iCloud(CloudKit) 동기화 사용 안 함 — 입력 데이터는 기기를 벗어나지 않음
 - 사용 통계(차트)는 본인 기기 내 사용 기록을 시각화만 — 외부 전송 X
-- 자동 수집: Firebase Analytics, Google AdMob, Google User Messaging Platform(광고 동의), Apple SKAdNetwork, Apple 시스템 크래시 로그(옵트인)
+- 자동 수집(제3자 SDK): Firebase Analytics, Firebase Crashlytics, Google AdMob, Google User Messaging Platform(광고·추적 동의 관리, ATT 기반), Apple SKAdNetwork
+- 분석·충돌 데이터는 출시 빌드에서만 수집(디버그 빌드 비수집)
 - 피드백 메일은 Apple Mail로 사용자 직접 발송 — 개발자 서버 거치지 않음
 
 ## 연락처
