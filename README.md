@@ -12,6 +12,7 @@ KimJiTae(김지태)가 개발한 iOS 앱들의 개인정보 처리방침 모음�
 | 스케줄워크 / ScheduleWork | [`ScheduleWork/`](./ScheduleWork/) |
 | 루프 / Loop (적립식 투자 일지) | [`DollarCostAveraging/`](./DollarCostAveraging/) |
 | 로또마스터 / LottoMaster | [`LottoMaster/`](./LottoMaster/) |
+| Wayp (GPS 속도계·주행기록) | [`Wayp/`](./Wayp/) |
 
 ## 구조 / Structure
 
