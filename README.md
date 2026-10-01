@@ -13,6 +13,7 @@ KimJiTae(김지태)가 개발한 iOS 앱들의 개인정보 처리방침 모음�
 | 루프 / Loop (적립식 투자 일지) | [`DollarCostAveraging/`](./DollarCostAveraging/) |
 | 로또마스터 / LottoMaster | [`LottoMaster/`](./LottoMaster/) |
 | WayP / 웨이피 (GPS 속도계·주행기록) | [`Wayp/`](./Wayp/) |
+| 대리머니 / DaeriMoney (대리운전 운행 기록·정산) | [`DaeriMoney/`](./DaeriMoney/) |
 
 ## 구조 / Structure
 
